@@ -1,0 +1,52 @@
+:root {
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+body {
+    margin: 0px;
+    width: 100vh;
+    display: flex;
+    }
+
+.splash-screen-container {
+    position: relative;  
+    color: white; 
+    
+}
+
+.splash-image {
+    height: 100vh; 
+}
+
+.odin-block {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+
+    background-color: rgba(0,0,0, 0.5);
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.odin-logo {
+    width: 100px;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sign-up-form {
+    display: flex;
+
+}
