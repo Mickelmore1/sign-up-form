@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(font/Norse-Bold.otf);
+}
+
 :root {
     box-sizing: border-box;
     overflow: hidden;
@@ -6,47 +11,105 @@
 
 body {
     margin: 0px;
-    width: 100vh;
+    padding: 0px;;
     display: flex;
-    }
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 
 .splash-screen-container {
     position: relative;  
     color: white; 
-    
 }
 
 .splash-image {
     height: 100vh; 
+    width: 50vh;
+    object-fit: cover;
+
 }
 
 .odin-block {
     position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
+    top: 25%;
+    transform: translate(0,-25%);
 
     background-color: rgba(0,0,0, 0.5);
 
     width: 100%;
+    height: auto;
+
+
+    padding: 10px 16px 10px 16px;
+    box-sizing: border-box;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .odin-logo {
-    width: 100px;
+    width: 20%;
+    height: auto;
+}
+
+.odin-title {
+    font-family: norse-bold,'Courier New', Courier, monospace;
+    font-size: 6rem;
 }
 
 
+
+
+.container div {
+    flex: 1;
+}
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    flex: 1;
 }
+
+.intro-container,
+.create-account-container,
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 250px;
+    
+}
+
+.intro-container,
+.create-account-container {
+    background-color: #F9FAFB;
+}
+
+.intro-container {
+    font-size: 1.2em;
+    font-weight: 600;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+
+.form-container {
+
+    box-shadow: 0px 2px 4px #afafaf;
+    z-index: 1;
+
+}
+
+
 
 .sign-up-form {
     display: flex;
+    flex-direction: column;
+}
 
+.sign-up-form-row {
+    display: flex;
 }
